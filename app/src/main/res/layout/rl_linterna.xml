@@ -11,30 +11,26 @@
         android:background="@android:color/holo_blue_dark"
         app:srcCompat="@drawable/boton"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true" android:contentDescription="@string/todo" />
 
     <Button
-        android:id="@+id/flash"
-        android:layout_width="900dp"
-        android:layout_height="40dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="20dp"
-        android:shadowColor="@android:color/holo_green_light"
-        android:text="Traducir"
-        android:textColorLink="@android:color/holo_green_light" />
-
-    <EditText
-        android:id="@+id/editText"
+        android:id="@+id/btnMenu"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/flash"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="15dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:textColor="@android:color/holo_green_light"
-        android:textColorLink="@android:color/holo_green_light"
-        android:visibility="visible" />
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:text="Configuracion"
+        android:textColor="@android:color/holo_green_dark" />
 
+    <Button
+        android:id="@+id/btnIntermitencia"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/boton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="Encender Intermitencia"
+        android:textColor="@android:color/holo_green_dark" />
 </RelativeLayout>
